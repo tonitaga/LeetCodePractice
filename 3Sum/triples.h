@@ -14,10 +14,10 @@ namespace s21 {
 
         static std::vector<std::vector<int>> ThreeSum(std::vector<int> &numbers) {
             std::vector<std::vector<int>> result;
-//            if (std::reduce(numbers.begin(), numbers.end()) == 0 && numbers.size() == 3) {
-//                result.push_back(numbers);
-//                return result;
-//            }
+            if (std::reduce(numbers.begin(), numbers.end()) == 0 && numbers.size() == 3) {
+                result.push_back(numbers);
+                return result;
+            }
 
             std::set<std::vector<int>> triples;
             auto size = numbers.size();
