@@ -1,5 +1,4 @@
 #include "palindromenumber.h"
-#include <cfloat>
 
 int main() {
     std::cout << s21::PalindromeNumber::IsPalindrome(121) << " == 1\n";
