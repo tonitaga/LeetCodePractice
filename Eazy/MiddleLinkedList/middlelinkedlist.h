@@ -25,6 +25,9 @@ namespace s21 {
                 fast = fast->next->next;
             }
 
+            if (fast->next != nullptr)
+                slow = slow->next;
+
             return slow;
         }
     };
